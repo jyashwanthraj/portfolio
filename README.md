@@ -1,6 +1,7 @@
 # Portfolio Website
 
-Welcome to my portfolio website!  The website is built using HTML and CSS and can be easily run in Visual Studio Code.
+Welcome to my portfolio website! link : https://jyashwanthraj.github.io/portfolio/index.html
+The website is built using HTML and CSS and can be easily run in Visual Studio Code.
 
 ## Getting Started
 
