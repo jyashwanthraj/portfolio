@@ -9,7 +9,7 @@ To run this website on your local machine, follow the steps below:
 1. Install Visual Studio Code: If you haven't already, download and install Visual Studio Code from the official website: https://code.visualstudio.com/
 
 3. Clone the repository: Clone this repository to your local machine using Git or download it as a ZIP file and extract it.
-  #link :
+  #link : https://github.com/jyashwanthraj/portfolio.git
 
 5. Open the project in Visual Studio Code: Open Visual Studio Code and use the "Open Folder" option to select the folder where you cloned or extracted the project.
 
