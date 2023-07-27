@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="window icon" type="image/png" href="Rocket-Download-Transparent-PNG-Image.png">
+
+    <style>
+      @font-face {
+        font-family: "DejaVu";
+        src: url("./fonts/DejaVuSansMono.ttf") format("truetype");
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: rgb(201 202 204);
+        /* font-family: "DejaVu Sans Mono"; */
+        font-family: "DejaVu";
+      }
+      body {
+        background-color: #1d1f21;
+        width: 100%;
+        min-height: 100vh;
+        height: fit-content;
+      }
+      nav > a {
+        color: rgb(43 188 137);
+        text-decoration: none;
+        height: 1.5rem;
+      }
+      nav > a:nth-child(2) {
+        --pgap: 0.75rem;
+        --mgap: 16px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 2px;
+        border-right-width: 2px;
+        border-style: dashed;
+        padding-inline: var(--pgap);
+        margin-inline: var(--mgap);
+      }
+
+      .flex {
+        display: flex;
+      }
+      .flex-col {
+        display: flex;
+        flex-direction: column;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .align-center {
+        align-items: center;
+      }
+      .content-center {
+        display: grid;
+        place-content: center;
+      }
+      .contain {
+        width: 60%;
+        margin-inline: auto;
+      }
+      .highlight {
+        border-radius: 0.375rem;
+        background-color: rgb(49 54 59);
+        padding-inline: 0.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="flex contain justify-between align-center"
+      style="height: 10rem"
+    >
+      <h1 style="font-size: 30px">🚀Yash</h1>
+      <nav class="flex">
+        <a class="content-center" href="./index.html">Home</a>
+        <a class="content-center" href="./projects.html">Projects</a>
+        <a class="content-center" href="">Articles</a>
+      </nav>
+    </header>
+    <main style="margin-block: 3.5rem">
+      <div class="contain flex-col" style="gap: 1.75rem">
+        <p style="font-size: 2.1rem; color: #eee; font-weight: 600">
+          Hey 👋, I'm Yashwanth.
+        </p>
+        <p style="line-height: 2rem" class="text-dimGrey leading-8">
+          I'm a Data science graduate student who loves to work
+          <span class="highlight">with data✨</span>
+          with modern technologies.Currently learning 
+          <span class="highlight">Data science🔭</span>
+           while also solidifying my already acquired knowledge of <span class="highlight">Data science🔭</span>
+        </p>
+        <div class="flex align-center" style="gap: 1.4rem">
+          <span>Find me on:</span>
+          <div class="flex" style="gap: 1rem">
+            <a class="content-center" href="https://github.com/jyashwanthraj" target="_blank">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="github"
+                role="img"
+                height="19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 496 512"
+                class="svg-inline--fa fa-github fa-lg"
+              >
+                <path
+                  fill="currentColor"
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                  class=""
+                ></path>
+              </svg>
+            </a>
+            <a class="content-center" href="mailto:jangamyashwanthraju@gmail.com" target="_blank">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                height="19"
+                width="19"
+                data-icon="twitter"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="svg-inline--fa fa-twitter fa-lg"
+              >
+                <path
+                  fill="currentColor"
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                  class=""
+                ></path>
+              </svg>
+            </a>
+            <a class="content-center" href="https://www.linkedin.com/in/yashwanth-raju-jangam-08419421a" target="_blank">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="linkedin"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                height="19"
+                width="19"
+                class="svg-inline--fa fa-linkedin fa-lg"
+              >
+                <path
+                  fill="currentColor"
+                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3V448c0 17.6 14.4 32 32 32H416c17.6 0 32-14.4 32-32V64.3c0-17.8-14.4-32.3-32-32.3zM135.5 416H71V214.5h64.5V416zm-32.3-224c-21.1 0-38.4-17.1-38.4-38.4s17.1-38.4 38.4-38.4c21.2 0 38.4 17.1 38.4 38.4s-17.2 38.4-38.4 38.4zm281.8 224h-64.5V311.4c0-28.6-.5-65.4-39.8-65.4-39.8 0-45.9 31.1-45.9 63.2V416h-64.3V214.5h59.9v33.7h.8c8.4-15.9 28.9-32.6 59.2-32.6 63.4 0 75.2 41.8 75.2 96.2V416zM208 416h-64.5V214.5H208V416z"
+                  class=""
+                ></path>
+              </svg>
+            </a>
+            <a href="mailto:dev.adewale@gmail.com"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="at" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-at fa-lg"><path fill="currentColor" d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192c0-35.3-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64s64-28.7 64-64z" class=""></path></svg></a>
+        </div>
+      </div>
+      <div id="tech" style="display: grid; margin-top: 5vmin; margin-bottom: 5vmin;">
+        <p style="font-size: 2.1rem; color: #eee; font-weight: 600; margin-bottom: 3vmin;">
+          Technologies:
+        </p>
+        <p style="line-height: 2rem" class="text-dimGrey leading-8">
+        Here's a list of that i have learnt :
+        </p>
+        <div id="lang" style="display: inline-flex; gap: 10px; padding: 10px;">
+          <svg xmlns="http://www.w3.org/2000/svg" height="19" fill="white" width="19" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+          <p style="line-height: 1.5rem" class="text-dimGrey leading-8">
+            Languages : C, C++, Python, HTML
+            </p>
+        </div>
+        <div id="pack" style="display: inline-flex; gap: 10px; padding: 10px;">
+          <svg xmlns="http://www.w3.org/2000/svg" height="19" width=19 viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z"/></svg>
+          <p style="line-height: 1.5rem" class="text-dimGrey leading-8">
+            Packages : numpy, pandas, sklearn, matplotlib, computer vision(cv2), cvzone
+            </p>
+        </div>
+        <div id="database" style="display: inline-flex; gap: 10px; padding: 10px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="19" width="19" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></svg>
+
+          <p style="line-height: 1.5rem" class="text-dimGrey leading-8">
+           DataBase : MySql
+            </p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
